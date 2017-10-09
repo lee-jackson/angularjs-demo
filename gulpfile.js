@@ -3,4 +3,4 @@ var gulp = require('gulp'),
 
 requireDir('./gulp_modules');
 
-gulp.task('default', ['sass']);
+gulp.task('default', ['sass', 'serve', 'watch']);
