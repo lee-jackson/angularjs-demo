@@ -12,10 +12,20 @@ app.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url: '/',
-      template: require('./modules/home/partials/home.html')
+      template: require('./partials/home.html'),
+      controller: 'headingController',
+      controllerAs: 'headingCtrl'
     })
     .state('products', {
       url: '/products',
-      template: require('./modules/products/partials/products.html')
-    });
+      template: require('./partials/products.html')
+    })
+    .state('services', {
+      url: '/services',
+      template: require('./partials/services.html')
+    })
+    .state('about', {
+      url: '/about',
+      template: require('./partials/about.html')
+    })
 });
