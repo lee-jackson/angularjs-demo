@@ -14,8 +14,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
       url: '/',
       template: require('./modules/home/partials/home.html')
     })
-    .state('team', {
-      url: '/team',
-      template: require('./modules/team/partials/team.html')
+    .state('products', {
+      url: '/products',
+      template: require('./modules/products/partials/products.html')
     });
 });

@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html data-ng-app="app">
-  <head><link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  <head><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
     <title>Demo</title>
   </head>
   <body>
-    <header>
-      <a data-ui-sref="home">Room58</a>
-      <a data-ui-sref="team">The Team</a>
+    <header class="header">
+      <nav>
+        <ul class="navigation">
+          <li class="navigation__item"><a data-ui-sref="home">Home</a></li>
+          <li class="navigation__item"><a data-ui-sref="products">Products</a></li>
+        </ul>
+      </nav>
     </header>
     <div role="main">
       <div data-ng-controller="headingController as headingCtrl">
