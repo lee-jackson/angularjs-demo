@@ -1,0 +1,23 @@
+.navigation {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+.navigation__item {
+  color: $color--white;
+  height: 100%;
+  padding: 20px;
+  vertical-align: middle;
+
+  > a {
+    color: $color--white;
+    font-size: $font-size--large;
+    text-decoration: none;
+
+    &:hover,
+    &:link {
+      color: $color--white;
+    }
+  }
+}

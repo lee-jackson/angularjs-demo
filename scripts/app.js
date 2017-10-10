@@ -1,7 +1,7 @@
-var app = angular.module('app', []);
+var app = angular.module('app', ['ui.router']);
 
-app.controller('headingController', function() {
-  var self = this;
-
-  self.heading = "Hello world";
+app.config(function($urlRouterProvider) {
+  $urlRouterProvider.otherwise('/');
 });
+
+require('./modules');

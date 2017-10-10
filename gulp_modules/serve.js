@@ -1,14 +1,14 @@
-var gulp = require('gulp')
-    connect = require('gulp-connect');
+const gulp = require('gulp')
+      connect = require('gulp-connect');
 
-gulp.task('serve', function() {
+gulp.task('serve', () =>
   connect.server({
     root: 'app',
     livereload: true
-  });
-});
+  })
+);
 
-gulp.task('html', function() {
+gulp.task('html', () =>
   gulp.src('./app/*.html')
-    .pipe(connect.reload());
-});
+    .pipe(connect.reload())
+);

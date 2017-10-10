@@ -1,4 +1,7 @@
-.heading {
-  font-family: 'Gloria Hallelujah', cursive;
-  padding: 15px;
+@import 'config';
+@import 'modules/header';
+@import 'modules/nav';
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
