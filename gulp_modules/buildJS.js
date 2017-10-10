@@ -4,9 +4,10 @@ const gulp = require('gulp'),
       stream = require('vinyl-source-stream'),
       buffer = require('vinyl-buffer'),
       sourcemaps = require('gulp-sourcemaps'),
-      stringify = require('stringify');
+      stringify = require('stringify')
+      jshint = require('gulp-jshint');
 
-gulp.task('siteJS', () =>
+gulp.task('siteJS', ['jsHint'], () =>
   browserify({
     entries: ['./scripts/app.js'],
     debug: true
@@ -36,5 +37,12 @@ gulp.task('vendorJS', () => {
     .pipe(concat('vendor.js'))
     .pipe(gulp.dest('./app/js/'));
 });
+
+gulp.task('jsHint', () =>
+  gulp.src('./scripts/**/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter("default"))
+    .pipe(jshint.reporter('fail'))
+);
 
 gulp.task('buildJS', ['vendorJS', 'siteJS']);
