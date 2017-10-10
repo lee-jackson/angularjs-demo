@@ -1,17 +1,17 @@
-var gulp = require('gulp'),
-    concat = require('gulp-concat'),
-    browserify = require('browserify'),
-    babelify = require('babelify'),
-    stream = require('vinyl-source-stream'),
-    buffer = require('vinyl-buffer'),
-    sourcemaps = require('gulp-sourcemaps'),
-    stringify = require('stringify');
+const gulp = require('gulp'),
+      concat = require('gulp-concat'),
+      browserify = require('browserify'),
+      stream = require('vinyl-source-stream'),
+      buffer = require('vinyl-buffer'),
+      sourcemaps = require('gulp-sourcemaps'),
+      stringify = require('stringify');
 
-gulp.task('siteJS', function() {
-  return browserify({
+gulp.task('siteJS', () =>
+  browserify({
     entries: ['./scripts/app.js'],
     debug: true
-  }).transform(stringify, {
+  })
+  .transform(stringify, {
     appliesTo: { includeExtensions: ['.html'] }
   })
   .bundle()
@@ -23,10 +23,10 @@ gulp.task('siteJS', function() {
   .pipe(sourcemaps.write('./', {
     includeContent: true
   }))
-  .pipe(gulp.dest('./app/js/'));
-});
+  .pipe(gulp.dest('./app/js/'))
+);
 
-gulp.task('vendorJS', function() {
+gulp.task('vendorJS', () => {
   var files = [
     './node_modules/angular/angular.js',
     './node_modules/@uirouter/angularjs/release/angular-ui-router.js'

@@ -9,7 +9,6 @@
   "author": "Lee Jackson",
   "license": "ISC",
   "devDependencies": {
-    "babelify": "^7.3.0",
     "browserify": "^14.4.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
