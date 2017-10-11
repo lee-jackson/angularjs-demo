@@ -1,0 +1,82 @@
+.products {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.product {
+  color: $color--white;
+  background-size: cover;
+}
+
+.product--bike {
+  background-image: url('../images/bike.jpeg');
+}
+
+.product--camera {
+  background-image: url('../images/camera.jpeg');
+}
+
+.product--car {
+  background-image: url('../images/car.jpeg');
+}
+
+.product--hat {
+  background-image: url('../images/hat.jpg');
+}
+
+.product--holiday {
+  background-image: url('../images/holiday.jpeg');
+}
+
+.product--kitchen {
+  background-image: url('../images/kitchen.jpeg');
+}
+
+.product--laptop {
+  background-image: url('../images/laptop.jpeg');
+}
+
+.product--motorcycle {
+  background-image: url('../images/motorcycle.jpeg');
+}
+
+.product--perfume {
+  background-image: url('../images/perfume.jpeg');
+}
+
+.product--phone {
+  background-image: url('../images/phone.jpeg');
+}
+
+.product--shoes {
+  background-image: url('../images/shoes.jpg');
+}
+
+.product--sofa {
+  background-image: url('../images/sofa.jpeg');
+}
+
+.product--sunglasses {
+  background-image: url('../images/sunglasses.jpeg');
+}
+
+.product--toy {
+  background-image: url('../images/toy.jpeg');
+}
+
+.product--watch {
+  background-image: url('../images/watch.jpeg');
+}
+
+.product__overlay {
+  padding: 1em;
+  opacity: 0;
+  transition: background-color .25s ease-in, opacity .25s ease-in;
+ }
+
+.product__overlay:hover {
+  background-color: black;
+  opacity: 1;
+  transition: background-color .5s ease-in, opacity .5s ease-in;
+}

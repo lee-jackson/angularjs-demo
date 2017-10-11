@@ -1,16 +1,8 @@
-var ctrl = function() {
-  var self = this;
+var ctrl = function(products) {
+  var self = this,
+      i;
 
-  self.products = [{
-      name: 'Product 1',
-      description: 'Description 1',
-      price: 99
-    },
-    {
-      name: 'Product 2',
-      description: 'Description 2',
-      price: 25
-    }];
+  self.products = products;
 };
 
-module.exports = ctrl;
+module.exports = ['PRODUCTS', ctrl];

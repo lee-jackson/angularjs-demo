@@ -1,3 +1,8 @@
-<h2 data-ng-bind="productCtrl.product.name"></h2>
-<p data-ng-bind="productCtrl.product.description"></p>
-<p>&pound;<span data-ng-bind="productCtrl.product.price"></span></p>
+<div class="product product--{{ctrl.product.name | lowercase}}">
+  <div class="product__overlay">
+  		<span>
+  			<h2 data-ng-bind="ctrl.product.name"></h2>
+        <p>{{ctrl.product.price | currency:"&pound;":0}}</p>
+  		</span>
+  </div>
+</div>
