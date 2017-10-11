@@ -1,7 +1,13 @@
 var product = function() {
   return {
-    restrict: 'E',
-    template: require('../partials/product.html')
+    restrict: 'A',
+    scope: {
+      product: '='
+    },
+    template: require('../partials/product.html'),
+    controller: 'ProductController',
+    controllerAs: 'productCtrl',
+    bindToController: true
   };
 };
 
