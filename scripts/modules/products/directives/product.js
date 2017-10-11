@@ -6,7 +6,7 @@ var product = function() {
     },
     template: require('../partials/product.html'),
     controller: 'ProductController',
-    controllerAs: 'productCtrl',
+    controllerAs: 'ctrl',
     bindToController: true
   };
 };

@@ -4,7 +4,7 @@ var route = function($stateProvider) {
       url: '/',
       template: require('../partials/home.html'),
       controller: 'HomeController',
-      controllerAs: 'homeCtrl'
+      controllerAs: 'ctrl'
     });
 };
 
