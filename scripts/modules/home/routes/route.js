@@ -3,8 +3,8 @@ var route = function($stateProvider) {
     .state('home', {
       url: '/',
       template: require('../partials/home.html'),
-      controller: 'HeadingController',
-      controllerAs: 'headingCtrl'
+      controller: 'HomeController',
+      controllerAs: 'homeCtrl'
     });
 };
 
