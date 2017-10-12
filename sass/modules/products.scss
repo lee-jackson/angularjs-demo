@@ -5,8 +5,8 @@
 }
 
 .product {
-  color: $color--white;
   background-size: cover;
+  color: $color--white;
 }
 
 .product--bike {
@@ -70,13 +70,13 @@
 }
 
 .product__overlay {
-  padding: 1em;
   opacity: 0;
+  padding: 1em;
   transition: background-color .25s ease-in, opacity .25s ease-in;
- }
 
-.product__overlay:hover {
-  background-color: black;
-  opacity: 1;
-  transition: background-color .5s ease-in, opacity .5s ease-in;
-}
+  &:hover {
+    background-color: $color--black;
+    opacity: 1;
+    transition: background-color .5s ease-in, opacity .5s ease-in;
+  }
+ }
