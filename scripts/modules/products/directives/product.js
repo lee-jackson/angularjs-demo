@@ -4,10 +4,7 @@ var product = function() {
     scope: {
       product: '='
     },
-    template: require('../partials/product.html'),
-    controller: 'ProductController',
-    controllerAs: 'ctrl',
-    bindToController: true
+    template: require('../partials/product.html')
   };
 };
 
