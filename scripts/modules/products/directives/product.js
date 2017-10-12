@@ -2,7 +2,7 @@ var product = function() {
   return {
     restrict: 'A',
     scope: {
-      product: '='
+      product: '<'
     },
     template: require('../partials/product.html')
   };
