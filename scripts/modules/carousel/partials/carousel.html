@@ -1,3 +1,5 @@
-<ul>
-  <li data-ng-repeat="item in ctrl.items" data-ng-bind="item.name"></li>
-</ul>
+<div class="carousel" data-ng-style="{ 'background-image': 'url(\'../images/' + ctrl.currentItem.imageFilename + '\')' }">
+  <ul class="carousel__list">
+    <li data-ng-repeat="item in ctrl.items"><div class="carousel__list-item" data-ng-click="ctrl.setCurrentItem(item)"></div></li>
+  </ul>
+</div>

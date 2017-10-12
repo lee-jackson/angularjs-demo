@@ -4,13 +4,13 @@ var ctrl = function() {
   self.heading = "Hello world";
 
   self.items = [{
-    name: 'item1'
+    imageFilename: 'fountain.jpeg'
   },
   {
-    name: 'item2'
+    imageFilename: 'pier.jpeg'
   },
   {
-    name: 'item3'
+    imageFilename: 'snow.jpeg'
   }];
 };
 
