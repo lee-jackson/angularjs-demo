@@ -10,7 +10,11 @@ gulp.task('sass', ['sassLint'], () =>
 
 gulp.task('sassLint', () =>
   gulp.src('./sass/**/*.scss')
-    .pipe(sassLint())
+    .pipe(sassLint({
+      rules: {
+        'class-name-format': 0
+      }
+    }))
     .pipe(sassLint.format())
     .pipe(sassLint.failOnError())
 );
