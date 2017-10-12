@@ -1,8 +1,25 @@
-var ctrl = function($scope) {
-  var self = this;
+var ctrl = function($scope, $interval) {
+  var self = this,
+      currentIndex,
+      intervalPromise;
 
-  self.setCurrentItem = function(item) {
-    self.currentItem = item;
+  function startRotation() {
+    if (intervalPromise) {
+      $interval.cancel(intervalPromise);
+    }
+
+    intervalPromise = $interval(function() {
+      var nextIndex = currentIndex + 1 > self.items.length - 1 ? 0 : currentIndex + 1;
+
+      self.setCurrentItemWithIndex(nextIndex);
+    }, 3000);
+  }
+
+  self.setCurrentItemWithIndex = function(index) {
+    currentIndex = index;
+    self.currentItem = self.items[currentIndex];
+
+    startRotation();
   };
 
   // On controller load the directive's isolate scope is not available
@@ -13,9 +30,11 @@ var ctrl = function($scope) {
    },
    function(newValue) {
     if (newValue){
-        self.setCurrentItem(self.items[0]);
+        self.setCurrentItemWithIndex(0);
+
+        startRotation();
     }
   });
 };
 
-module.exports = ['$scope', ctrl];
+module.exports = ['$scope', '$interval', ctrl];
