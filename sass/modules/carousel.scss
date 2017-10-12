@@ -25,3 +25,7 @@
   margin: 5px;
   width: 25px;
 }
+
+.carousel__list-item--current {
+    background-color: $color--white;
+}

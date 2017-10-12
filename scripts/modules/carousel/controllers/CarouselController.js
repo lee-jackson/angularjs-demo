@@ -1,36 +1,40 @@
 var ctrl = function($scope, $interval) {
   var self = this,
-      currentIndex,
       intervalPromise;
 
   function startRotation() {
+    // On first call there won't be an intervalPromise
     if (intervalPromise) {
       $interval.cancel(intervalPromise);
     }
 
     intervalPromise = $interval(function() {
-      var nextIndex = currentIndex + 1 > self.items.length - 1 ? 0 : currentIndex + 1;
+      var nextIndex = self.currentIndex + 1 > self.items.length - 1 ? 0 : self.currentIndex + 1;
 
-      self.setCurrentItemWithIndex(nextIndex);
+      self.setCurrentItem(nextIndex);
     }, 3000);
   }
 
-  self.setCurrentItemWithIndex = function(index) {
-    currentIndex = index;
-    self.currentItem = self.items[currentIndex];
+  self.setCurrentItem = function(index) {
+    self.currentIndex = index;
+    self.currentItem = self.items[self.currentIndex];
 
     startRotation();
   };
 
+  self.isCurrentItem = function(index) {
+    return index === self.currentIndex;
+  };
+
   // On controller load the directive's isolate scope is not available
   // therefore setup a watch to assign the default current item
-  // when it is available
+  // when it is available and start rotation of images
   $scope.$watch(function() {
      return self.items;
    },
    function(newValue) {
     if (newValue){
-        self.setCurrentItemWithIndex(0);
+        self.setCurrentItem(0);
 
         startRotation();
     }
