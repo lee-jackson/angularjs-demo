@@ -1,11 +1,9 @@
 @import 'config';
 
+@import 'modules/core';
+@import 'modules/brand';
 @import 'modules/header';
 @import 'modules/footer';
 @import 'modules/nav';
 @import 'modules/products';
 @import 'modules/carousel';
-
-body {
-  font-family: 'Roboto', sans-serif;
-}
