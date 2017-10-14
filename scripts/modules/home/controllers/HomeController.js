@@ -4,13 +4,13 @@ var ctrl = function() {
   self.heading = "Hello world";
 
   self.items = [{
-    imageFilename: 'fountain.jpeg'
+    imageUrl: 'https://images.pexels.com/photos/407083/vienna-belvedere-wien-schloss-407083.jpeg?w=900&h=600&auto=compress&cs=tinysrgb&fit=crop'
   },
   {
-    imageFilename: 'pier.jpeg'
+    imageUrl: 'https://images.pexels.com/photos/461930/pexels-photo-461930.jpeg?w=900&h=600&auto=compress&cs=tinysrgb&fit=crop&crop=left'
   },
   {
-    imageFilename: 'snow.jpeg'
+    imageUrl: 'https://images.pexels.com/photos/301537/pexels-photo-301537.jpeg?h=600&auto=compress&cs=tinysrgb'
   }];
 };
 
