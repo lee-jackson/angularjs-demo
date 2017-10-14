@@ -1,5 +1,6 @@
 @import 'config';
 
+@import 'modules/brand';
 @import 'modules/header';
 @import 'modules/footer';
 @import 'modules/nav';
@@ -7,5 +8,5 @@
 @import 'modules/carousel';
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-style--default;
 }
