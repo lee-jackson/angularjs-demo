@@ -12,7 +12,9 @@ gulp.task('sassLint', () =>
   gulp.src('./sass/**/*.scss')
     .pipe(sassLint({
       rules: {
-        'class-name-format': 0
+        'class-name-format': 0,
+        'no-url-protocols': 0,
+        'no-url-domains': 0
       }
     }))
     .pipe(sassLint.format())
