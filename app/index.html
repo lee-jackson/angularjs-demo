@@ -2,14 +2,16 @@
 <html data-ng-app="app">
   <head><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/styles.css">
     <title>Demo</title>
   </head>
   <body>
     <header class="header">
-      <span class="brand-title">Demo</span>
+      <a class="brand-title" data-ui-sref="home">Demo</a></li>
       <nav>
         <ul class="navigation">
+          <li class="navigation__hamburger" data-hamburger><span class="fa fa-navicon"></span></li>
           <li class="navigation__item"><a data-ui-sref="home">Home</a></li>
           <li class="navigation__item"><a data-ui-sref="products">Products</a></li>
           <li class="navigation__item"><a data-ui-sref="services">Services</a></li>

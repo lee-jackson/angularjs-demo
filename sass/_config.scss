@@ -1,5 +1,7 @@
 // Breakpoints
-$breakpoint--large: 1200px;
+$breakpoint--medium: 650px;
+$breakpoint--large: 800px;
+$breakpoint--largest: 1200px;
 
 // Colours
 $color--black: #000;
@@ -8,5 +10,9 @@ $color--white: #fff;
 // Text
 $font-style--default: 'Roboto', sans-serif;
 $font-style--brand: 'Libre Barcode 39 Text', cursive;
+
 $font-size--large: 28px;
-$font-size--brand-title: 55px;
+
+$font-size--brand-title: 45px;
+$font-size--nav-item: 20px;
+$font-size--nav-hamburger: 35px;

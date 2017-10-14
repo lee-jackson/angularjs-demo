@@ -1,24 +1,52 @@
 .navigation {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
+  padding: 0;
+
+  @media only screen and (min-width: $breakpoint--large) {
+    flex-direction: row;
+  }
 }
 
 .navigation__item {
   color: $color--white;
+  display: none;
   height: 100%;
-  padding: 20px;
+  padding: 10px;
+  text-align: right;
   vertical-align: middle;
+
+  &.show {
+    display: block;
+  }
 
   > a {
     color: $color--white;
-    font-size: $font-size--large;
+    font-size: $font-size--nav-item;
     text-decoration: none;
 
     &:hover,
     &:link {
       color: $color--white;
     }
+  }
+
+  @media only screen and (min-width: $breakpoint--large) {
+    display: block;
+    padding: 20px;
+  }
+}
+
+.navigation__hamburger {
+  cursor: pointer;
+  font-size: $font-size--nav-hamburger;
+  padding: 10px;
+  text-align: right;
+
+  @media only screen and (min-width: $breakpoint--large) {
+    display: none;
   }
 }

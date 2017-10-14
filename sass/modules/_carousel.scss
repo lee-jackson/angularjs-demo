@@ -1,7 +1,7 @@
 .carousel-container {
   max-width: 1200px;
 
-  @media only screen and (min-width: $breakpoint--large) {
+  @media only screen and (min-width: $breakpoint--largest) {
     margin-left: 20%;
     margin-right: 20%;
   }
