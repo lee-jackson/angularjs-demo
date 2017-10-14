@@ -12,7 +12,7 @@ var ctrl = function($scope, $interval) {
       var nextIndex = self.currentIndex + 1 > self.items.length - 1 ? 0 : self.currentIndex + 1;
 
       self.setCurrentItem(nextIndex);
-    }, 3000);
+    }, 5000);
   }
 
   self.setCurrentItem = function(index) {
