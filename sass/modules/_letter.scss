@@ -1,0 +1,11 @@
+.letter {
+  display: flex;
+  font-family: $font-style--handwriting;
+  font-size: $font-size--letter;
+  justify-content: center;
+  margin: 0 25px;
+}
+
+.letter__signature {
+  font-family: $font-style--signature;
+}
