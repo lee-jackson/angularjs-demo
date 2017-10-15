@@ -3,4 +3,3 @@ require('./carousel');
 require('./hamburger');
 require('./home');
 require('./products');
-require('./services');
