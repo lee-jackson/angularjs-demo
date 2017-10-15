@@ -1,8 +1,8 @@
 var route = function($stateProvider) {
   $stateProvider
-    .state('about', {
-      url: '/about',
-      template: require('../partials/about.html')
+    .state('contact', {
+      url: '/contact',
+      template: require('../partials/contact.html')
     });
 };
 
