@@ -22,16 +22,16 @@
 }
 
 .contact-form__field {
-    border: $border--default;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin: 8px 0;
-    padding: 12px 20px;
-    width: 100%
+  border: $border--default;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 8px 0;
+  padding: 12px 20px;
+  width: 100%;
 }
 
 .contact-form__field--message {
-  height: 250px;
+  height: 200px;
 }
 
 .contact-form__submit {
