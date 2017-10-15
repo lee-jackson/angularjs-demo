@@ -1,3 +1,13 @@
 <div>
   <h1>Contact us</h1>
+  <section class="contact-form-container">
+    <form name="ctrl.contactUsForm" class="contact-form">
+      <label><p class="contact-form__field-label">Name</p><input type="text" name="name" class="contact-form__field" data-ng-model="ctrl.formModel.name" required /></label>
+      <label><p class="contact-form__field-label">Email</p><input type="email" name="name" class="contact-form__field" data-ng-model="ctrl.formModel.email" required /></label>
+      <label><p class="contact-form__field-label">Phone number</p><input type="tel" name="name" class="contact-form__field" data-ng-model="ctrl.formModel.phoneNumber" /></label>
+      <label><p class="contact-form__field-label">Subject</p><input type="text" name="name" class="contact-form__field" data-ng-model="ctrl.formModel.subject" required /></label>
+      <label><p class="contact-form__field-label">Message</p><input type="text" name="name" class="contact-form__field contact-form__field--message" data-ng-model="ctrl.formModel.message" required /></label>
+      <input type="submit" value="Submit" class="btn btn--primary contact-form__submit" />
+   </form>
+ </section>
 </div>

@@ -6,6 +6,8 @@ $breakpoint--largest: 1200px;
 // Colours
 $color--black: #000;
 $color--white: #fff;
+$color--grey: #ccc;
+$color--green: #4caf50;
 
 // Text
 $font-style--default: 'Roboto', sans-serif;
@@ -16,3 +18,6 @@ $font-size--large: 28px;
 $font-size--brand-title: 45px;
 $font-size--nav-item: 20px;
 $font-size--nav-hamburger: 35px;
+
+// Borders
+$border--default: 1px solid $color--grey;

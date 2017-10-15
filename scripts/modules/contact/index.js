@@ -1,1 +1,2 @@
+require('./controllers');
 require('./routes');
