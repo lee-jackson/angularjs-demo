@@ -1,3 +1,32 @@
-<div>
+<section>
   <h1>Contact us</h1>
-</div>
+  <div class="contact-form-container">
+    <form name="ctrl.form" class="contact-form" data-ng-submit="ctrl.submit()">
+      <label>
+        <p class="contact-form__field-label">First name</p>
+        <input type="text" name="firstName" class="contact-form__field" data-ng-model="ctrl.model.firstName" required />
+      </label>
+      <label>
+        <p class="contact-form__field-label">Last name</p>
+        <input type="text" name="lastName" class="contact-form__field" data-ng-model="ctrl.model.lastName" required />
+      </label>
+      <label>
+        <p class="contact-form__field-label">Email</p>
+        <input type="email" name="email" class="contact-form__field" data-ng-model="ctrl.model.email" required />
+      </label>
+      <label>
+        <p class="contact-form__field-label">Phone number</p>
+        <input type="tel" name="phone" class="contact-form__field" data-ng-model="ctrl.model.phoneNumber" />
+      </label>
+      <label>
+        <p class="contact-form__field-label">Subject</p>
+        <input type="text" name="subject" class="contact-form__field" data-ng-model="ctrl.model.subject" required />
+      </label>
+      <label>
+        <p class="contact-form__field-label">Message</p>
+        <textarea name="message" class="contact-form__field contact-form__field--message" data-ng-model="ctrl.model.message" required></textarea>
+      </label>
+      <input type="submit" value="Submit" class="btn btn--primary contact-form__submit" />
+   </form>
+ </div>
+</section>

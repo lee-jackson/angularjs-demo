@@ -1,9 +1,8 @@
 var route = function($stateProvider) {
   $stateProvider
-    .state('contact', {
-      url: '/contact',
-      template: require('../partials/contact.html'),
-      controller: 'ContactController',
+    .state('thanks', {
+      template: require('../partials/thanks.html'),
+      controller: 'ThanksController',
       controllerAs: 'ctrl',
       bindToController: true
     });
