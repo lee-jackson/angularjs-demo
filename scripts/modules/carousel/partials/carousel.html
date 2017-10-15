@@ -1,0 +1,15 @@
+<div class="carousel-container">
+  <div class="carousel__display" data-ng-style="{ 'background-image': 'url(\'' + ctrl.currentItem.imageUrl + '\')' }">
+    <ul class="carousel__list">
+      <li data-ng-repeat="item in ctrl.items">
+        <div>
+          <div class="carousel__list-item" data-ng-class="{ 'carousel__list-item--current' : ctrl.isCurrentItem($index) }" data-ng-click="ctrl.setCurrentItem($index)"></div>
+        <div>
+      </li>
+    </ul>
+  </div>
+  <div class="carousel__description">
+    <h2 data-ng-bind="ctrl.currentItem.title"></h2>
+    <p data-ng-bind="ctrl.currentItem.description"></p>
+  </div>
+</div>

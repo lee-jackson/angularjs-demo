@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+  <head><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Demo</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="brand-title" data-ui-sref="home">Demo</a></li>
+      <nav>
+        <ul class="navigation">
+          <li class="navigation__hamburger" data-hamburger><span class="fa fa-navicon"></span></li>
+          <li class="navigation__item"><a data-ui-sref="home">Home</a></li>
+          <li class="navigation__item"><a data-ui-sref="products">Products</a></li>
+          <li class="navigation__item"><a data-ui-sref="contact">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main" data-ui-view></main>
+    <footer class="footer">
+      &copy; 2017 Lee Jackson
+    </footer>
+    <script src="/js/vendor.js"></script>
+    <script src="/js/site.js"></script>
+  </body>
+</html>

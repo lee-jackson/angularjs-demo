@@ -1,0 +1,23 @@
+$letter-shadow--outer: 0 0 5px rgba(0, 0, 0, .2);
+$letter-shadow--inner: 0 0 50px rgba(0, 0, 0, .1);
+
+.letter {
+  display: flex;
+  font-family: $font-style--handwriting;
+  font-size: $font-size--letter;
+  justify-content: center;
+  margin: 0 25px 25px;
+}
+
+.letter__paper {
+  background-color: $color--white;
+  box-shadow: $letter-shadow--outer, inset $letter-shadow--inner;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 25px 50px;
+  position: relative;
+}
+
+.letter__signature {
+  font-family: $font-style--signature;
+}
