@@ -3,8 +3,12 @@
   <section class="contact-form-container">
     <form name="ctrl.form" class="contact-form" data-ng-submit="ctrl.submit()">
       <label>
-        <p class="contact-form__field-label">Name</p>
-        <input type="text" name="name" class="contact-form__field" data-ng-model="ctrl.model.name" required />
+        <p class="contact-form__field-label">First name</p>
+        <input type="text" name="firstName" class="contact-form__field" data-ng-model="ctrl.model.firstName" required />
+      </label>
+      <label>
+        <p class="contact-form__field-label">Last name</p>
+        <input type="text" name="lastName" class="contact-form__field" data-ng-model="ctrl.model.lastName" required />
       </label>
       <label>
         <p class="contact-form__field-label">Email</p>

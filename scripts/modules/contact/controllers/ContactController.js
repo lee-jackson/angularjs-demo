@@ -1,11 +1,13 @@
-var ctrl = function() {
+var ctrl = function($state, contactService) {
   var self = this;
 
   self.model = {};
 
   self.submit = function() {
-    console.log(self.form);
+    contactService.update(self.model);
+
+    $state.go('thanks');
   };
 };
 
-module.exports = ctrl;
+module.exports = ['$state', 'ContactService', ctrl];
